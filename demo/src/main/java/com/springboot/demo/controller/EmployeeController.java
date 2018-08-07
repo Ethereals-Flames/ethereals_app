@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,10 +14,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.springboot.demo.dao.EmployeeDAO;
+import com.springboot.demo.dao.UsersDAO;
 import com.springboot.demo.model.Employee;
+import com.springboot.demo.model.UsersModel;
 
 @Controller
-@RequestMapping("/employees")
 public class EmployeeController {
 	private EmployeeDAO empDAO = new EmployeeDAO();
 	
@@ -28,6 +30,19 @@ public class EmployeeController {
 		modelAndView.addObject("employees", employees);
 		
 		return modelAndView;
+	}
+	
+	@RequestMapping("/signup")
+	public ModelAndView signup() {
+		ModelAndView modelAndView = new ModelAndView("sign-up-illustration");
+		return modelAndView;
+	}
+	
+	@RequestMapping(path = "/signup_req", method=RequestMethod.POST)
+	public void signup_req(Model m1, UsersModel users) {
+		UsersDAO usersdao = new UsersDAO();
+		Boolean result = usersdao.createUser(users);
+		System.out.print(result + " Dar");
 	}
 	
 	@RequestMapping("/{empid}")

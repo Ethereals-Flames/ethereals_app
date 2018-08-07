@@ -13,9 +13,9 @@ import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
 
 public class DBFactory {
 	private Connection con = null;
-	private static final String URL = "jdbc:mysql://localhost:3306/company";
-	private static final String USERNAME = "root"; 
-	private static final String PASSWORD = "7hunder_3irdS"; 
+	private static final String URL = "jdbc:mysql://mmhighschool.ml:3306/mmhighschool_ethereals_db";
+	private static final String USERNAME = "mmhighschool_ethereals"; 
+	private static final String PASSWORD = "ethereals"; 
 	 
 	public DBFactory() {
 		
