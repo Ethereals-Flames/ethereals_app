@@ -55,14 +55,17 @@
             <!-- Email address -->
             <div class="form-group">
 
-              <!-- Label -->
-              <label>
-                Email Address
-              </label>
+              	<!-- Label -->
+              	<label>
+                	Email or Phone
+              	</label>
 
-              <!-- Input -->
-              <input id="email" name="email" type="email" class="form-control" placeholder="name@address.com" required="required"/>
-
+              	<!-- Input -->
+              	<input id="email" name="email" type="email" class="form-control" placeholder="Email or Ph Number" required="required"/>
+			  	<div class="valid-feedback">
+                </div>
+                <div class="invalid-feedback">
+                </div>
             </div>
 
             <!-- Password -->
@@ -74,10 +77,40 @@
               </label>
 
               <!-- Input group -->
-              <div class="input-group input-group-merge">
+              <div class="psw_input input-group input-group-merge">
 
                 <!-- Input -->
-                <input id="password" name="password" type="password" class="form-control form-control-appended" placeholder="Enter your password" required="required"/>
+                <input id="psw_check" name="password" type="password" class="psw_child form-control form-control-appended" placeholder="Enter your password" required="required"/>
+				
+                <!-- Icon -->
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fe fe-eye"></i>
+                  </span>
+                </div>
+                <div class="psw_check_msg valid-feedback">
+                </div>
+                <div class="psw_check_msg invalid-feedback">
+                </div>
+                
+                
+
+              </div>
+            </div>
+            
+            <!-- Re Password -->
+            <div class="form-group">
+
+              <!-- Label -->
+              <label>
+                Retype Password
+              </label>
+
+              <!-- Input group -->
+              <div class="psw_input input-group input-group-merge">
+
+                <!-- Input -->
+                <input id="re_pass" type="password" class="psw_child form-control form-control-appended" placeholder="Enter your password again " required="required"/>
 
                 <!-- Icon -->
                 <div class="input-group-append">
@@ -85,16 +118,21 @@
                     <i class="fe fe-eye"></i>
                   </span>
                 </div>
+                
+                <div class="re_pass_msg valid-feedback">
+                </div>
+                <div class="re_pass_msg invalid-feedback">
+                </div>
 
               </div>
             </div>
 
             <!-- Submit -->
-            <button class="btn btn-lg btn-block btn-primary mb-3">
+            <button id="sign_up" class="btn btn-lg btn-block btn-primary mb-3" disabled>
               Sign up
             </button>
 
-            <!-- Link -->
+             <!-- Link -->
             <div class="text-center">
               <small class="text-muted text-center">
                 Already have an account? <a href="sign-in-illustration.html">Log in</a>.
@@ -123,6 +161,100 @@
 
     <!-- Theme JS -->
     <script src="${pageContext.request.contextPath}/assets/js/theme.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#email').keyup(function() {
+			signupBtn();
+		});
+		
+	    $(".psw_input span").click(function(){
+	    	var psw = $(this).parent().siblings('.psw_child');
+	    	if('password' == psw.attr('type')){
+	            psw.prop('type', 'text');
+	       }else{
+	            psw.prop('type', 'password');
+	       }
+	    });
+	    
+	    $('#psw_check').keyup(function(){
+	    	var check_msg = checkStrength($(this).val());
+	    	if(check_msg == "Too Short") {
+	    		$(this).addClass('is-invalid');
+	    		$(this).removeClass('is-valid');
+	    	} else if (check_msg == "Weak"){
+	    		$(this).addClass('is-invalid');
+	    		$(this).removeClass('is-valid');
+	    	} else if (check_msg == "Strong") {
+	    		$(this).addClass('is-valid');
+	    		$(this).removeClass('is-invalid');
+	    	} else if (check_msg == "Good") {
+	    		$(this).addClass('is-valid');
+	    		$(this).removeClass('is-invalid');
+	    	}
+	    	
+	    	$(this).parent().find('.psw_check_msg').html(check_msg);
+	    	signupBtn();
+   		}) ;
+	    
+	    $('#re_pass').keyup(function(){
+	    	
+	    	if($(this).val() == $('#psw_check').val()) {
+	    		$(this).parent().find('.re_pass_msg').html('Passwords Match');
+	    		$(this).addClass('is-valid');
+	    		$(this).removeClass('is-invalid');
+	    	} else {
+	    		$(this).parent().find('.re_pass_msg').html('Passwords not Match');
+	    		$(this).addClass('is-invalid');
+	    		$(this).removeClass('is-valid');
+	    	}
+	    	signupBtn();
+	    });
+	    
+	    function signupBtn() {
+	    	if($('input').val().length >= 8 && $('#re_pass').hasClass('is-valid') && $('#psw_check').hasClass('is-valid')) {
+	    		$('#sign_up').removeAttr('disabled');
+	    	} else {
+	    		$("#sign_up").attr('disabled','disabled');
+	    	}
+	    	
+	    }
+   		
+   		function checkStrength(password)
+   		{
+   		var strength = 0;
+   		if (password.length < 8) { 
+   		/* $('#strength_message').removeClass()
+   		$('#strength_message').addClass('short') */
+   		return "Too Short";
+   		}
 
+   		if (password.length > 7) strength += 1
+   		if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/))  strength += 1
+   		if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/))  strength += 1 
+   		if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/))  strength += 1
+   		if (password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1
+   		if (strength < 2 )
+   		{
+   		/* $('#strength_message').removeClass()
+   		$('#strength_message').addClass('weak') */
+   		return "Weak";   
+   		}
+   		else if (strength == 2 )
+   		{
+   		/* $('#strength_message').removeClass()
+   		$('#strength_message').addClass('good') */
+   		return "Good";
+   		}
+   		else
+   		{
+   		/* $('#strength_message').removeClass()
+   		$('#strength_message').addClass('strong') */
+   		return "Strong";
+   		}
+   		}
+	});
+	
+	
+	</script>
   </body>
 </html>

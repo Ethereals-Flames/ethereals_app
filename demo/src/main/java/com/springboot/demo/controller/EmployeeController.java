@@ -39,10 +39,21 @@ public class EmployeeController {
 	}
 	
 	@RequestMapping(path = "/signup_req", method=RequestMethod.POST)
-	public void signup_req(Model m1, UsersModel users) {
+	public String signup_req(Model m1, UsersModel users) {
 		UsersDAO usersdao = new UsersDAO();
 		Boolean result = usersdao.createUser(users);
-		System.out.print(result + " Dar");
+		System.out.println(result + " Dar");
+		if (result == true) {
+			return "redirect:/configure_otp/";
+		} else {
+			return "redirect:/home";
+		}
+	}
+	
+	@RequestMapping("/configure_otp")
+	public ModelAndView confOtp() {
+		ModelAndView modelAndView = new ModelAndView("otp_configure");
+		return modelAndView;
 	}
 	
 	@RequestMapping("/{empid}")

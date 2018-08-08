@@ -10,15 +10,15 @@ public class UsersDAO {
 	private DBFactory dbFactory;
 	
 	private final String[] columns1 = new String[] {Usr.usrId, Usr.email, Usr.password};
-	private final String[] columns2 = new String[] {Usr.email, Usr.password};
+	private final String[] init_reg = new String[] {Usr.email, Usr.password, Usr.active};
 	
 	public UsersDAO() {
 		dbFactory = new DBFactory();
 	}
 	
 	public boolean createUser(UsersModel users) {
-		Object[] data = new Object[] {users.getEmail(), users.getPassword()};
+		Object[] data = new Object[] {users.getEmail(), users.getPassword(), "not_act"};
 		
-		return dbFactory.insert(Usr.table, columns2, data);
+		return dbFactory.insert(Usr.table, init_reg, data);
 	}
 }
