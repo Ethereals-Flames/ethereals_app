@@ -6,14 +6,14 @@
     <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="assets/fonts/feather/feather.min.css">
-    <link rel="stylesheet" href="assets/libs/highlight/styles/vs2015.min.css">
-    <link rel="stylesheet" href="assets/libs/quill/dist/quill.core.css">
-    <link rel="stylesheet" href="assets/libs/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="assets/libs/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/fonts/feather/feather.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/libs/highlight/styles/vs2015.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/libs/quill/dist/quill.core.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/libs/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/libs/flatpickr/dist/flatpickr.min.css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/theme.min.css">
 
     <title>Dashkit</title>
   </head>
@@ -31,7 +31,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand mr-auto" href="index.html">
-          <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
+          <img src="${pageContext.request.contextPath}/assets/img/logo.svg" alt="..." class="navbar-brand-img">
         </a>
 
         <!-- Form -->
@@ -58,7 +58,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar">
-                          <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded">
                         </div>
 
                       </div>
@@ -83,7 +83,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar">
-                          <img src="assets/img/avatars/teams/team-logo-2.jpg" alt="..." class="avatar-img rounded">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/teams/team-logo-2.jpg" alt="..." class="avatar-img rounded">
                         </div>
 
                       </div>
@@ -109,7 +109,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-4by3">
-                          <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
                         </div>
 
                       </div>
@@ -136,7 +136,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-4by3">
-                          <img src="assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
                         </div>
 
                       </div>
@@ -163,7 +163,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-4by3">
-                          <img src="assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
                         </div>
 
                       </div>
@@ -190,7 +190,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar">
-                          <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -217,7 +217,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar">
-                          <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -291,7 +291,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-sm">
-                          <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -320,7 +320,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-sm">
-                          <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -349,7 +349,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-sm">
-                          <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -378,7 +378,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-sm">
-                          <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -407,7 +407,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-sm">
-                          <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -436,7 +436,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-sm">
-                          <img src="assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -465,7 +465,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-sm">
-                          <img src="assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -494,7 +494,7 @@
                     
                         <!-- Avatar -->
                         <div class="avatar avatar-sm">
-                          <img src="assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
+                          <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
                         </div>
 
                       </div>
@@ -528,7 +528,7 @@
         
             <!-- Toggle -->
             <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+              <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
             </a>
 
             <!-- Menu -->
@@ -1134,7 +1134,7 @@
                     
                     <!-- Avatar -->
                     <a href="project-overview.html" class="avatar avatar-4by3">
-                      <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
+                      <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
                     </a>
 
                   </div>
@@ -1182,7 +1182,7 @@
                     
                     <!-- Avatar -->
                     <a href="project-overview.html" class="avatar avatar-4by3">
-                      <img src="assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
+                      <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
                     </a>
 
                   </div>
@@ -1230,7 +1230,7 @@
                     
                     <!-- Avatar -->
                     <a href="project-overview.html" class="avatar avatar-4by3">
-                      <img src="assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
+                      <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
                     </a>
 
                   </div>
@@ -1278,7 +1278,7 @@
                     
                     <!-- Avatar -->
                     <a href="project-overview.html" class="avatar avatar-4by3">
-                      <img src="assets/img/avatars/projects/project-5.jpg" alt="..." class="avatar-img rounded">
+                      <img src="${pageContext.request.contextPath}/assets/img/avatars/projects/project-5.jpg" alt="..." class="avatar-img rounded">
                     </a>
 
                   </div>
@@ -1393,16 +1393,16 @@
                       <td class="text-right">
                         <div class="avatar-group">
                           <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Dianna Smiley">
-                            <img src="assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
-                            <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
-                            <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
-                            <img src="assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                         </div>
                       </td>
@@ -1441,13 +1441,13 @@
                       <td class="text-right">
                         <div class="avatar-group justify-content-end">
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Dianna Smiley">
-                            <img src="assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
-                            <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
-                            <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                         </div>
                       </td>
@@ -1486,13 +1486,13 @@
                       <td class="text-right">
                         <div class="avatar-group justify-content-end">
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Dianna Smiley">
-                            <img src="assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
-                            <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
-                            <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                         </div>
                       </td>
@@ -1531,10 +1531,10 @@
                       <td class="text-right">
                         <div class="avatar-group justify-content-end">
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Dianna Smiley">
-                            <img src="assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
-                            <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                         </div>
                       </td>
@@ -1573,16 +1573,16 @@
                       <td class="text-right">
                         <div class="avatar-group justify-content-end">
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Dianna Smiley">
-                            <img src="assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
-                            <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
-                            <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                           <a href="#!" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
-                            <img src="assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle border border-white" alt="...">
+                            <img src="${pageContext.request.contextPath}/assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle border border-white" alt="...">
                           </a>
                         </div>
                       </td>
@@ -1619,20 +1619,20 @@
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/chart.js/dist/Chart.min.js"></script>
-    <script src="assets/libs/chart.js/Chart.extension.min.js"></script>
-    <script src="assets/libs/highlight/highlight.pack.min.js"></script>
-    <script src="assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-    <script src="assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-    <script src="assets/libs/list.js/dist/list.min.js"></script>
-    <script src="assets/libs/quill/dist/quill.min.js"></script>
-    <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/chart.js/dist/Chart.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/chart.js/Chart.extension.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/highlight/highlight.pack.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/list.js/dist/list.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/quill/dist/quill.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/libs/select2/dist/js/select2.min.js"></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/theme.min.js"></script>
 
   </body>
 </html>
